@@ -50,7 +50,7 @@ func TestHashFunction(t *testing.T) {
 }
 
 func TestIsPasswordValid(t *testing.T) {
-	mconn := SetConnection("MONGOULBI", "petapedia")
+	mconn := SetConnection("MONGOJAMBE", "petapedia")
 	var userdata User
 	userdata.Username = "petasal"
 	userdata.Password = "secret"
@@ -58,3 +58,4 @@ func TestIsPasswordValid(t *testing.T) {
 	anu := IsPasswordValid(mconn, "user", userdata)
 	fmt.Println(anu)
 }
+
